@@ -1,0 +1,609 @@
+root@localhost:~# history
+    1  ls
+    2  cd .
+    3  ls
+    4  cd ..
+    5  ls
+    6  cd .
+    7  cd ~
+    8  ls
+    9  ls -al
+   10  cd Documents
+   11  ls
+   12  cd ..
+   13  ls
+   14  clear
+   15  ls
+   16  cd Documents
+   17  pwd
+   18  cd 
+   19  cd /
+   20  ls
+   21  cd etc
+   22  ls
+   23  cd alsa
+   24  ls
+   25  cd conf.d
+   26  pwd
+   27  ls
+   28  cd
+   29  cd ../..
+   30  cd /etc/alsa/conf.d
+   31  cd ../..
+   32  cd 
+   33  cd ..
+   34  cd 
+   35  clear
+   36  history
+   37  ls
+   38  cd Documents
+   39  pwd
+   40  cd ..
+   41  cd /root/Documents
+   42  cd /root/Documents
+   43  cd ..
+   44  cd .
+   45  cd .touch file.txt
+   46  mkdir -p a/b/c/d/
+   47  mdkir jan feb mar apr
+   48  mkdir jan feb mar apr
+   49  ls
+   50  rmdir jan feb mar apr a
+   51  ls
+   52  rmdir a
+   53  cd a
+   54  ls
+   55  cd ..
+   56  mkdir test
+   57  cd test
+   58  mkdir -p a/b/c/d
+   59  mkdir jan feb mar apr
+   60  ls
+   61  cd ..
+   62  cd a
+   63  cd b
+   64  cd c
+   65   cd d
+   66  cd ..
+   67  rmdir d
+   68  cd ..
+   69  rmdir c
+   70  cd ..
+   71  rmdir b
+   72  cd ..
+   73  rmdir a
+   74  ls
+   75  cd test
+   76  man
+   77  cd 
+   78  man ls
+   79  touch file1
+   80  ls
+   81  rm file1
+   82  ls
+   83  cd test
+   84  touch file1
+   85  ls
+   86  cat file1
+   87  vi file2
+   88  ls
+   89  vi file2
+   90  ls
+   91  cat file2
+   92  vi file1
+   93  cat file1
+   94  vim file 3
+   95  ls
+   96  cat file
+   97  mv file file3
+   98  ls
+   99  echo file3
+  100  echo"Hello World">file4
+  101  echo "Hello World" > file4
+  102  cat file4
+  103  ls
+  104  touch python{1..20}.txt
+  105  ls
+  106  mkdir java{1..20}
+  107  ls
+  108  rm -rf java{1..20}
+  109  rm -rf python{1..20}.txt
+  110  ls
+  111  mv file1 a
+  112  ls
+  113  cd a
+  114  ls
+  115  cd ..
+  116  rm -rf a
+  117  ls
+  118  mkdir -p a/b/c/d
+  119  ls
+  120  touch file1
+  121  rm -v file2
+  122  rm -vf file2
+  123  rm -rf *
+  124  ls
+  125  history
+  126  clear
+  127  history
+  128  su admin
+  129  ls -lR
+  130  exit
+  131  mkdir -p test/a/b/c/d
+  132  cd test
+  133  ls
+  134  cd ..
+  135  ls
+  136  rm -rf test
+  137  ls
+  138  clear
+  139  ls
+  140  mkdir test
+  141  cd test
+  142  vim aplha
+  143  cat alpha
+  144  ls
+  145  mv aplha alpha
+  146  ls
+  147  cat alpha
+  148  less alpha
+  149  more alpha
+  150  head alpha
+  151  tail alpha
+  152  ls
+  153  mkdir X; cd X; touch X; ls
+  154  cd ..
+  155  ls
+  156  wc alpha
+  157  wc -wl alpha
+  158  cal
+  159  cal > f1
+  160  ls
+  161  cat f1
+  162  date >> f1
+  163  cat f1
+  164  ls
+  165  ls -ld X
+  166  ls -l X
+  167  ls -ld X f1
+  168  c ..
+  169  cd ..
+  170  ls
+  171  ls -l Desktop apple banana carrot f1 X
+  172  ls -l Desktop apple banana carrot f1 X &> output
+  173  ls
+  174  mv output test/output
+  175  ls
+  176  cd test
+  177  ls
+  178  ls
+  179  ls -l Desktop apple banana carrot f1 X &> output
+  180  cat output
+  181  history | head -5
+  182  head alpha
+  183  vim imp
+  184  mkdir /us1 /us2 /us3
+  185  ln imp /us1/f1
+  186  vim f1
+  187  mkdir us1 us2 us3
+  188  ln imp us1/f1
+  189  vim us1/f1
+  190  ln imp us2/f2
+  191  vim us2/f2
+  192  ln imp us3/f3
+  193  vim us3/f3
+  194  ls
+  195  ls -li imp
+  196  ls -li imp us1/f1 us2/f2 us3/f3
+  197  cd ..
+  198  las
+  199  ls
+  200  cd /
+  201  ls
+  202  rmdir us1 us2 us3
+  203  rm -rf us1 us2 us3
+  204  ls
+  205  cd root
+  206  cd test
+  207  ls -li imp us1/f1 us2/f2 us3/f3
+  208  ls -li imp us1/f1 us2/f2 us3/f3 >> output 
+  209  less output
+  210  ls -li imp us1/f1 us2/f2 us3/f3 >> hardlink_output 
+  211  vim output
+  212  ls
+  213  cat f1
+  214  cat hardlink_output
+  215  cat output
+  216  ls
+  217  ln -s imp test_imp
+  218  ls -li
+  219  rm -f imp
+  220  ls -li
+  221  touch imp
+  222  ls -li
+  223  cat imp
+  224  vim imp
+  225  vim test_imp
+  226  cat test_imp
+  227  cat imp
+  228  find /
+  229  find / -type -f -name alpha | head -5
+  230  find / -type f -name alpha | head -5
+  231  find / -size +10M -size -15M | wc -l
+  232  find / -size +10M -size -30M | wc -l
+  233  find / -size +10M -size -30M 
+  234  find / -size +10M -size -30M | wc -l
+  235  find / -size +10M -size -30M &> find_output
+  236  cat find_output
+  237  wc -l find_output
+  238  ls
+  239  grep "One"
+  240  grep "One" /alpha
+  241  grep "One" alpha
+  242  grep -i "one" alpha
+  243  history
+  244  useradd hero
+  245  passwd hero
+  246  su hero
+  247  vim /etc/passwd
+  248  vim /etc/shadow
+  249  vim /etc/gshadow
+  250  vim /etc/group
+  251  id hero
+  252  usermode -u 0 hero
+  253  us
+  254  usermode -c "Shaktimaan" hero
+  255  usermod -c "Shaktimaan" hero
+  256  vim /etc/passwd
+  257  useradd Chhayansh
+  258  passwd Chhayansh
+  259  usermod -c "Ryder" Chhayansh
+  260  vim etc/passwd
+  261  ls
+  262  vim /etc/passwd
+  263  cd /home
+  264  ls
+  265  mkdir /Chhayansh
+  266  usermod -d /Chhayansh Chhayansh
+  267  ls
+  268  cd ..
+  269  ls
+  270  vim /etc/passwd
+  271  su - Chhayansh
+  272  cd
+  273  ls
+  274  cd ..
+  275  ls
+  276  cd home
+  277  ls
+  278  user -s /sbin/nologin Chhayansh
+  279  usermod -s /sbin/nologin Chhayansh
+  280  su Chhayansh
+  281  usermod -s / bin/bash    Chhayansh
+  282  usermod -s /bin/bash Chhayansh
+  283  su Chhayansy
+  284  su Chhayansh
+  285  su - Chhayansh
+  286  cd
+  287  cd \home
+  288  ls
+  289  cd ..
+  290  ls
+  291  cd /home
+  292  ls
+  293  userdel -r hero
+  294  ls
+  295  cd
+  296  cd /
+  297  vim /etc/passwd
+  298  cd
+  299  ls /
+  300  usermod -d /home/Chhayansh
+  301  usermod -d /home/Chhayansh Chhayansh
+  302  cd /
+  303  rm -rf Chhayansh
+  304  cd
+  305  cd /home
+  306  ls
+  307  cd ls
+  308  cd ..
+  309  ls
+  310  cd
+  311  ls
+  312  cd test
+  313  ls
+  314  cd
+  315  history
+  316  ls
+  317  cd /home
+  318  userdel -r Ryder
+  319  ls
+  320  userdel -r Chhayansh
+  321  ls
+  322  cd /
+  323  ls
+  324  cd 
+  325  las
+  326  ls
+  327  clear
+  328  cd /home
+  329  userdel -r admin
+  330  cd
+  331  vim /etc/passwd
+  332  clear
+  333  ll
+  334  clear
+  335  cd /;ls
+  336  cd
+  337  clear
+  338  useradd user1
+  339  passwd user1
+  340  groupadd development
+  341  vim /etc/group
+  342  groupmod -n WhatsApp development
+  343  vim /etc/group
+  344  vim /etc/passwd
+  345  vim /etc/group
+  346  usermod -G WhatsApp
+  347  usermod -G WhatsApp user1
+  348  vim /etc/passwd
+  349  getent group user1
+  350  id user1
+  351  gpasswd WhatsApp
+  352  gpasswd -d user1 WhatsApp
+  353  gpasswd -r WhatsApp
+  354  groupdel WhatsApp
+  355  vim /etc/group
+  356  groupadd new
+  357  vim /etc/group
+  358  usermod -g new user1
+  359  id user1
+  360  vim /etc/group
+  361  getent group user1
+  362  getent group new
+  363  vim /etc/group
+  364  vim /etc/passwd
+  365  usermod -g user1 user1
+  366  getent group user1
+  367  id user1
+  368  chage user1 -l
+  369  chage user1
+  370  chage user1 -l
+  371  vim /etc/passwd
+  372  ls /etc
+  373  cd /etc/default
+  374  ls
+  375  cd
+  376  vim /etc/default/useradd
+  377  vim /etc/login.dfs
+  378  vim /etc/login.defs
+  379  visudo
+  380  vim etc/sudoers.d
+  381  vim etc/sudoers.d/
+  382  vim /etc/sudoers.d/
+  383  history
+  384  clear
+  385  history
+  386  ll
+  387  ls -l file1
+  388  touch file1
+  389  ls -l file1
+  390  chmod u+x file1
+  391  ls -l file1
+  392  chmod ugo+ x file1
+  393  chmod ugo + x file1
+  394  chmod x file1
+  395  chmod ugo file1
+  396  chmod ugo+x file1
+  397  ls -l file1
+  398  chmod ugo+w file1
+  399  ls -l file1
+  400  chmod ugo-w-x file1
+  401  ls -l file1
+  402  chmod ugo+rwx file1
+  403  ls -l file1
+  404  chmod ugo-rwx file1
+  405  ls -l file1
+  406  chmod a+7 file1
+  407  chmod 7 file1
+  408  chmod 777 file1
+  409  ls -l file1
+  410  chmod 000 file1
+  411  ls -l file1
+  412  chmod 777 file1
+  413  id user1
+  414  chown root:user1 file1
+  415  ls -l file1
+  416  chown user1:user1 file1
+  417  chown user1 root file1
+  418  chown user1:root file1
+  419  chown :user1 file1
+  420  ls -l file1
+  421  clear
+  422  mkdir
+  423  mkdir /wednesday
+  424  ls -ls /wednesday
+  425  ls -ld /wednesday
+  426  useradd a,b,c
+  427  useradd a: useradd b; useradd c
+  428  useradd a; useradd b; useradd c
+  429  id c
+  430  passwd a
+  431  passwd b
+  432  passwd c
+  433  groupadd test
+  434  usermod -G test a
+  435  usermod -G test b
+  436  usermod -G test c
+  437  getent group test
+  438  chgrp test /wednesday
+  439  ls -ld /wednesday
+  440  chmod g+w /wedmesday
+  441  chmod o-x /wedmesday
+  442  chmod o-x /wednesday
+  443  ls -ld /wednesday
+  444  usermod -G c c
+  445  id c
+  446  getent group test
+  447  passwd a
+  448  chmod g+w /wednesday
+  449  ls -ld /wednesday
+  450  chmod o+x /wednesday
+  451  ls -ld /wednesday
+  452  getent group test
+  453  chmod g+s /wednesday
+  454  ls -ld /wednesday
+  455  mkdir /assignment
+  456  ls -ld /assignment/
+  457  useradd user2
+  458  passwd user2
+  459  chmod 777 /assignment/
+  460  ls -ld /assignment/
+  461  chmod o+t /assignment/
+  462  ls -ld /assignment/
+  463  chmod o-t /assignment/
+  464  chmod 755 /assignment/
+  465  ls -ld /assignment/
+  466  vim /.bashrc
+  467  vim .bashrc
+  468  vim /etc/login.df
+  469  vim /etc/login.dfs
+  470  vim /etc/login.defs
+  471  vim .bashrc
+  472  su - user1
+
+
+
+
+root@localhost:~# su -a
+su: invalid option -- 'a'
+Try 'su --help' for more information.
+root@localhost:~# su - a
+a@localhost:~$ 
+logout
+root@localhost:~# su - a
+Last login: Wed Sep  9 16:39:07 IST 2026 on pts/1
+a@localhost:~$ mkdir /X
+mkdir: cannot create directory ‘/X’: Permission denied
+a@localhost:~$ mkdir /X
+mkdir: cannot create directory ‘/X’: Permission denied
+a@localhost:~$ mkdir /X
+mkdir: cannot create directory ‘/X’: Permission denied
+a@localhost:~$ mkdir /wedensday/x
+mkdir: cannot create directory ‘/wedensday/x’: No such file or directory
+a@localhost:~$ cd /wednesday
+a@localhost:/wednesday$ mkdir aa
+a@localhost:/wednesday$ su -b
+su: invalid option -- 'b'
+Try 'su --help' for more information.
+a@localhost:/wednesday$ su - b
+Password: 
+b@localhost:~$ cd /wednesday
+b@localhost:/wednesday$ mkdir bb
+b@localhost:/wednesday$ su - c
+Password: 
+c@localhost:~$ cd /wedensday 
+-bash: cd: /wedensday: No such file or directory
+c@localhost:~$ mkdir cc
+c@localhost:~$ rmdir cc
+c@localhost:~$ cd /wednesday
+c@localhost:/wednesday$ mkdir cc
+mkdir: cannot create directory ‘cc’: Permission denied
+c@localhost:/wednesday$ su - a
+Password: 
+Last login: Wed Sep  9 16:42:00 IST 2026 on pts/1
+a@localhost:~$ ll
+total 0
+a@localhost:~$ cd /wednesday
+a@localhost:/wednesday$ ll
+total 0
+drwxr-xr-x. 2 a a 6 Sep  9 16:45 aa
+drwxr-xr-x. 2 b b 6 Sep  9 16:46 bb
+a@localhost:/wednesday$ mkdir ab
+a@localhost:/wednesday$ ll
+total 0
+drwxr-xr-x. 2 a a    6 Sep  9 16:45 aa
+drwxr-sr-x. 2 a test 6 Sep  9 16:51 ab
+drwxr-xr-x. 2 b b    6 Sep  9 16:46 bb
+a@localhost:/wednesday$ su - b
+Password: 
+Last login: Wed Sep  9 16:46:10 IST 2026 on pts/1
+b@localhost:~$ cd /wedensday
+-bash: cd: /wedensday: No such file or directory
+b@localhost:~$ cd /wednesday/
+b@localhost:/wednesday$ mkdir ab
+mkdir: cannot create directory ‘ab’: File exists
+b@localhost:/wednesday$ mkdir ba
+b@localhost:/wednesday$ l
+bash: l: command not found...
+b@localhost:/wednesday$ ll
+total 0
+drwxr-xr-x. 2 a a    6 Sep  9 16:45 aa
+drwxr-sr-x. 2 a test 6 Sep  9 16:51 ab
+drwxr-sr-x. 2 b test 6 Sep  9 16:52 ba
+drwxr-xr-x. 2 b b    6 Sep  9 16:46 bb
+b@localhost:/wednesday$ 
+b@localhost:/wednesday$ su - user1
+Password: 
+user1@localhost:~$ cd /assignment/
+user1@localhost:/assignment$ mkdir user1
+user1@localhost:/assignment$ touch user1.txt
+user1@localhost:/assignment$ rm -rf user2
+user1@localhost:/assignment$ rm -rf user2.txt
+user1@localhost:/assignment$ ll
+total 0
+drwxr-xr-x. 2 user1 user1 6 Sep  9 17:15 user1
+-rw-r--r--. 1 user1 user1 0 Sep  9 17:15 user1.txt
+user1@localhost:/assignment$ mkdir user1
+user1@localhost:/assignment$ touch user1.txt
+user1@localhost:/assignment$ ll
+total 0
+drwxr-xr-x. 2 user1 user1 6 Sep  9 17:19 user1
+-rw-r--r--. 1 user1 user1 0 Sep  9 17:19 user1.txt
+drwxr-xr-x. 2 user2 user2 6 Sep  9 17:19 user2
+-rw-r--r--. 1 user2 user2 0 Sep  9 17:19 user2.txt
+user1@localhost:/assignment$ rm -rf user2
+rm: cannot remove 'user2': Operation not permitted
+user1@localhost:/assignment$ rm -rf user2.txt
+rm: cannot remove 'user2.txt': Operation not permitted
+user1@localhost:/assignment$ 
+
+
+
+root@localhost:~# su -user2
+Try 'su --help' for more information.
+root@localhost:~# su - user2
+user2@localhost:~$ cd /assignment/
+user2@localhost:/assignment$ mkdir user2
+user2@localhost:/assignment$ touch user2.txt
+user2@localhost:/assignment$ rm -rf user1
+user2@localhost:/assignment$ rm -rf user1.txt
+user2@localhost:/assignment$ ll
+total 0
+user2@localhost:/assignment$ mkdir user2
+user2@localhost:/assignment$ touch user2.txt
+user2@localhost:/assignment$ ll
+total 0
+drwxr-xr-x. 2 user1 user1 6 Sep  9 17:19 user1
+-rw-r--r--. 1 user1 user1 0 Sep  9 17:19 user1.txt
+drwxr-xr-x. 2 user2 user2 6 Sep  9 17:19 user2
+-rw-r--r--. 1 user2 user2 0 Sep  9 17:19 user2.txt
+user2@localhost:/assignment$ rm -rf user1
+rm: cannot remove 'user1': Operation not permitted
+user2@localhost:/assignment$ rm -rf user1.txt
+rm: cannot remove 'user1.txt': Operation not permitted
+user2@localhost:/assignment$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

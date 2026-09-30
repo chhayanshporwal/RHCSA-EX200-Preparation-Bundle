@@ -1,0 +1,102 @@
+ 805  cd
+  806  history
+  807  cd var/log
+  808  ls var/log
+  809  cd var
+  810  cd /var/log
+  811  ls
+  812  vim messages
+  813  vim secure
+  814  vim cron
+  815  vim boot.log
+  816  vim /etc/rsyslog.conf
+  817  logger -p local7.notice "HAPPY BIRTHDAY JATIN JANGID"
+  818  vim boot.log
+  819  journalctl
+  820  logger -p local7.notice "HAPPY BIRTHDAY JATIN JANGID"
+  821  journalctl
+  822  journalctl -f
+  823  journalctl -p emerg
+  824  journalctl -p alert
+  825  journalctl -p crit
+  826  journalctl -p err
+  827  journalctl -p warning
+  828  journalctl -p notice
+  829  journalctl -p info
+  830  journalctl -p debug
+  831  journalctl -u httpd.service
+  832  journalctl -u sshd.service
+  833  journalctl --since today
+  834  journalctl --since "-1 Hour"
+  835  journalctl --since "-1hour"
+  836  journalctl --since "2026-09-14 12:00" --until "2026-09-17 15:00"
+  837  journalctl -0 verbose
+  838  journalctl -o verbose
+  839  history
+  840  ls
+  841  vim /etc/rsyslog.conf
+  842  ls
+  843  cd
+  844  mkdir /var/log/journal
+  845  journalctl --flush
+  846  less /var/log/journal
+  847  vim /var/log/journal
+  848  ls
+  849  cd /var/log/journal
+  850  ls
+  851  cat 1514196fdfab46c5b2debbcfaa63f1de/
+  852  timedatectl
+  853  timedatectl list-timezones 
+  854  timedatectl set-timezone America/New_York 
+  855  timedatectl
+  856  timedatectl set-timezone Asia/Kolkata 
+  857  timedatectl 
+  858  timedatectl set-time 9:00:00
+  859  timedatectl set-ntp false
+  860  timedatectl set-time 9:00:00
+  861  timedatectl 
+  862  timedatectl set-ntp true
+  863  timedatectl set-timezone Asia/Kolkata 
+  864  timedatectl 
+  865  vim /etc/chrony.conf
+  866  systemctl restart chronyd
+  867  chronyc sources -v
+  868  vim /etc/chrony.conf
+  869  systemctl restart chronyd
+  870  chronyc sources -v
+  871  vim /etc/chrony.conf
+  872  rm -rf /etc/.chrony.conf.swp 
+  873  vim /etc/chrony.conf
+  874  history
+  875  cd
+  876  tar -cvjf /root/backup/testbackup.bz2 /etc
+  877  ls
+  878  cd ..
+  879  ls
+  880  cd
+  881  tar -cvjf /root/testbackup.bz2 /etc
+  882  tar -cvzf /root/testbackup.gzip /etc
+  883  tar -cvJf /root/testbackup.xz /etc
+  884  ls
+  885  history
+  886  rm rf testbackup.gzip
+  887  ls
+  888  tar -cvzf /root/testbackup.gz /etc
+  889  ls
+  890  mv testbackup.bz2 backup.tar.bz2; mv testbackup.gz backup.tar.gz; mv testbackup.xz backup.tar.xz
+  891  ls
+  892  cd file
+  893  cd file1
+  894  cat file1
+  895  rm rf file1
+  896  history
+  897  l
+  898  ls
+  899  mkdir yoyo
+  900  ls
+  901  whoami
+  902  whatis psswd
+  903  whatis passwd
+  904  man -k passwd
+  905  man -k man
+  906  ls

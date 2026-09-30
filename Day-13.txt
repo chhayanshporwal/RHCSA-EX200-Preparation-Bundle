@@ -1,0 +1,92 @@
+  904  lsblk
+  905  fdisk /dev/sdb
+  906  lsblk
+  907  fdisk /dev/sdb
+  908  lsblk
+  909  fdisk /dev/sdb
+  910  lsblk
+  911  fdisk /dev/sdb
+  912  lsblk
+  913  fdisk /dev/sdb
+  914  lsblk
+  915  fdisk /dev/sdb
+  916  lsblk
+  917  fdisk /dev/sdb
+  918  lsblk
+  919  mkfs.xfs /dev/sdb1
+  920  blkid
+  921  vim /etc/fstab
+  922  mkdir /abc1
+  923  systemctl daemon-reload
+  924  mount -a
+  925  vim /etc/fstab
+  926  mkfs.ex4 /dev/sdb2
+  927  mkfs.ext4 /dev/sdb2
+  928  vim /etc/fstab
+  929  mkdir /chhayansh
+  930  systemctl daemon-reload
+  931  mount -a
+  932  lsblk
+  933  mkdir /garvit
+  934  mkfs.xfs /dev/sdb3
+  935  blkid
+  936  vim /etc/fstab
+  937  lsblk
+  938  systemctl daemon-reload
+  939  mount -a
+  940  lsblk
+  941  mkdir /ashish
+  942  mkfs.ext4 /dev/sdb5
+  943  vim /etc/fstab 
+  944  systemctl daemon-reload
+  945  mount -a
+  946  lsblk
+  947  blkid
+  948  lsblk
+  949  umount /chhayansh /garvit /ashish
+  950  lsblk
+  951  umount /abc1
+  952  vim /etc/fstab 
+  953  lsblk
+  954  vim /etc/fstab 
+  955  fdisk /dev/sdb
+  956  lsblk
+  957  rmdir /chhayansh /ashish /garvit /abc1
+  958  ls
+  959  ..
+  960  cd ..
+  961  ls
+  962  cd
+  963  man parted
+  964  man fdisk
+  965  lsblk
+  966  fdisk /dev/sdb
+  967  lsblk
+  968  mkswap /dev/sdb1
+  969  vim /etc/fstab
+  970  swapon -a
+  971  lsblk
+  972  fdisk /dev/sdb
+  973  mkswap /dev/sdb2
+  974  vim /etc/fstab
+  975  lsblk
+  976  swapon -a
+  977  lsblk
+  978  vim /etc/fstab
+  979  swapon -a
+  980  lsblk
+  981  swapoff /dev/sdb1 /dev/sdb2
+  982  lsblk
+  983  swapon /dev/sdb1 /dev/sdb2
+  984  lsblk
+  985  swapoff /dev/sdb1 /dev/sdb2
+  986  lsblk
+  987  swapoff /dev/sdb1 /dev/sdb2
+  988  lsblk
+  989  vim /etc/fstab
+  990  lsblk
+  991  fdisk /dev/sdb
+  992  lsblk
+  993  systemctl daemon-reload
+  994  lsblk
+  995  history

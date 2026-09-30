@@ -1,0 +1,130 @@
+root@localhost:~/test# history
+    1  ls
+    2  cd .
+    3  ls
+    4  cd ..
+    5  ls
+    6  cd .
+    7  cd ~
+    8  ls
+    9  ls -al
+   10  cd Documents
+   11  ls
+   12  cd ..
+   13  ls
+   14  clear
+   15  ls
+   16  cd Documents
+   17  pwd
+   18  cd 
+   19  cd /
+   20  ls
+   21  cd etc
+   22  
+   23  ls
+   24  cd alsa
+   25  ls
+   26  cd conf.d
+   27  pwd
+   28  ls
+   29  cd
+   30  cd ../..
+   31  cd /etc/alsa/conf.d
+   32  cd ../..
+   33  cd 
+   34  cd ..
+   35  cd 
+   36  clear
+   37  history
+   38  ls
+   39  cd Documents
+   40  pwd
+   41  cd ..
+   42  cd /root/Documents
+   43  cd /root/Documents
+   44  cd ..
+   45  cd .
+   46  cd .touch file.txt
+   47  mkdir -p a/b/c/d/
+   48  mdkir jan feb mar apr
+   49  mkdir jan feb mar apr
+   50  ls
+   51  rmdir jan feb mar apr a
+   52  ls
+   53  rmdir a
+   54  cd a
+   55  ls
+   56  cd ..
+   57  mkdir test
+   58  cd test
+   59  mkdir -p a/b/c/d
+   60  mkdir jan feb mar apr
+   61  ls
+   62  cd ..
+   63  cd a
+   64  cd b
+   65  cd c
+   66   cd d
+   67  cd ..
+   68  rmdir d
+   69  cd ..
+   70  rmdir c
+   71  cd ..
+   72  rmdir b
+   73  cd ..
+   74  rmdir a
+   75  ls
+   76  cd test
+   77  man
+   78  cd 
+   79  man ls
+   80  touch file1
+   81  ls
+   82  rm file1
+   83  ls
+   84  cd test
+   85  touch file1
+   86  ls
+   87  cat file1
+   88  vi file2
+   89  ls
+   90  vi file2
+   91  ls
+   92  cat file2
+   93  vi file1
+   94  cat file1
+   95  vim file 3
+   96  ls
+   97  cat file
+   98  mv file file3
+   99  ls
+  100  echo file3
+  101  echo"Hello World">file4
+  102  echo "Hello World" > file4
+  103  cat file4
+  104  ls
+  105  touch python{1..20}.txt
+  106  ls
+  107  mkdir java{1..20}
+  108  ls
+  109  rm -rf java{1..20}
+  110  rm -rf python{1..20}.txt
+  111  ls
+  112  mv file1 a
+  113  ls
+  114  cd a
+  115  ls
+  116  cd ..
+  117  rm -rf a
+  118  ls
+  119  mkdir -p a/b/c/d
+  120  ls
+  121  touch file1
+  122  rm -v file2
+  123  rm -vf file2
+  124  rm -rf *
+  125  ls
+  126  history
+  127  clear
+  128  history
+

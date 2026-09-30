@@ -1,0 +1,104 @@
+694  dnf remove epel release
+  695  dnf remove epel-release
+  696  systemctl
+  697  systemctl list-unit
+  698  systemctl list-units --service
+  699  systemctl list-units --type service
+  700  systemctl list-units --type=service --all
+  701  systemctl list-unit-file --type=service --all
+  702  systemctl list-unit-files --type=service --all
+  703  systemctl list-unit-files --type service 
+  704  systemctl list-units --type service
+  705  systemctl status httpd
+  706  systemctl start httpd
+  707  systemctl status httpd
+  708  systemctl stop httpd
+  709  systemctl status httpd
+  710  history
+  711  systemctl start httpd
+  712  systemctl restart httpd
+  713  systemctl status httpd
+  714  systemctl stop httpd
+  715  systemctl start httpd
+  716  systemctl status httpd
+  717  systemctl reload httpd
+  718  systemctl status httpd
+  719  systemctl restart httpd
+  720  systemctl status httpd
+  721  systemctl enable httpd
+  722  cd /etc/systemd/system/multi-user.target.wants/; ls
+  723  systemctl disable httpd
+  724  cd /etc/systemd/system/multi-user.target.wants/; ls
+  725  cd
+  726  systemctl status httpd
+  727  systemctl mask httpd
+  728  systemctl status httpd
+  729  systemctl restart httpd
+  730  systemctl reload httpd
+  731  systemctl disable httpd
+  732  systemctl stop httpd
+  733  systemctl start httpd
+  734  systemctl unmask httpd
+  735  systemctl start httpd
+  736  systemctl status httpd
+  737  systemctl enable httpd
+  738  systemctl status httpd
+  739  systemctl disable httpd
+  740  systemctl status httpd
+  741  systemctl stop httpd
+  742  systemctl status httpd
+  743  systemctl is-active httpd
+  744  systemctl is-enabled httpd
+  745  systemctl is-disabled httpd
+  746  systemctl is-failed httpd
+  747  ip a
+  748  ip addr
+  749  ifconfig
+  750  ip link show
+  751  ip addr show ens160
+  752  ip link show ens160
+  753  ip -s link show ens160
+  754  ping 8.8.8.8
+  755  ping -c4 8.8.8.8
+  756  ip route
+  757  tracepath access.redhat.com
+  758  tracepath redhat.com
+  759  ss -tan
+  760  ss -tam
+  761  ss -tan
+  762  nmcli dev status
+  763  nmcli con show
+  764  nmcli dev status --active
+  765  nmcli con show --active
+  766  nmcli con add ifname ens240 type Ethernet
+  767  nmcli con show --active
+  768  nmcli dev status --active
+  769  nmcli con show 
+  770  nmcli con add con-name ens123 type ethernet
+  771  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4,method manual ipv4. address 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  772  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4. address 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  773  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4.address 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  774  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4. addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  775  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4.addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  776  nmcli con show 
+  777  nmcli con add con-name ens170 type ethernet ifname ens170 ipv4.method manual ipv4.addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  778  nmcli con show 
+  779  nmcli con del ens123 
+  780  nmcli con del ethernet-ens240
+  781  nmcli con del ens170
+  782  nmcli con add con-name ens170 type ethernet ifname ens170 ipv4.method manual ipv4.addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  783  nmcli con show 
+  784  nmcli con up ens170 
+  785  nmcli con up ens160 
+  786  nmcli con down ens160 
+  787  nmcli con up ens160 
+  788  sudo apt update && sudo apt install sl
+  789  ~sudo apt update && sudo apt install sl
+  790  yum install sl
+  791  apt install sl
+  792  dnf install sl
+  793  sl
+  794  sudo dnf install sl
+  795  sudo dnf install s1
+  796  man nmcli 
+  797  history

@@ -1,0 +1,889 @@
+root@machine1:~# history
+    1  ls
+    2  cd .
+    3  ls
+    4  cd ..
+    5  ls
+    6  cd .
+    7  cd ~
+    8  ls
+    9  ls -al
+   10  cd Documents
+   11  ls
+   12  cd ..
+   13  ls
+   14  clear
+   15  ls
+   16  cd Documents
+   17  pwd
+   18  cd 
+   19  cd /
+   20  ls
+   21  cd etc
+   22  ls
+   23  cd alsa
+   24  ls
+   25  cd conf.d
+   26  pwd
+   27  ls
+   28  cd
+   29  cd ../..
+   30  cd /etc/alsa/conf.d
+   31  cd ../..
+   32  cd 
+   33  cd ..
+   34  cd 
+   35  clear
+   36  history
+   37  ls
+   38  cd Documents
+   39  pwd
+   40  cd ..
+   41  cd /root/Documents
+   42  cd /root/Documents
+   43  cd ..
+   44  cd .
+   45  cd .touch file.txt
+   46  mkdir -p a/b/c/d/
+   47  mdkir jan feb mar apr
+   48  mkdir jan feb mar apr
+   49  ls
+   50  rmdir jan feb mar apr a
+   51  ls
+   52  rmdir a
+   53  cd a
+   54  ls
+   55  cd ..
+   56  mkdir test
+   57  cd test
+   58  mkdir -p a/b/c/d
+   59  mkdir jan feb mar apr
+   60  ls
+   61  cd ..
+   62  cd a
+   63  cd b
+   64  cd c
+   65   cd d
+   66  cd ..
+   67  rmdir d
+   68  cd ..
+   69  rmdir c
+   70  cd ..
+   71  rmdir b
+   72  cd ..
+   73  rmdir a
+   74  ls
+   75  cd test
+   76  man
+   77  cd 
+   78  man ls
+   79  touch file1
+   80  ls
+   81  rm file1
+   82  ls
+   83  cd test
+   84  touch file1
+   85  ls
+   86  cat file1
+   87  vi file2
+   88  ls
+   89  vi file2
+   90  ls
+   91  cat file2
+   92  vi file1
+   93  cat file1
+   94  vim file 3
+   95  ls
+   96  cat file
+   97  mv file file3
+   98  ls
+   99  echo file3
+  100  echo"Hello World">file4
+  101  echo "Hello World" > file4
+  102  cat file4
+  103  ls
+  104  touch python{1..20}.txt
+  105  ls
+  106  mkdir java{1..20}
+  107  ls
+  108  rm -rf java{1..20}
+  109  rm -rf python{1..20}.txt
+  110  ls
+  111  mv file1 a
+  112  ls
+  113  cd a
+  114  ls
+  115  cd ..
+  116  rm -rf a
+  117  ls
+  118  mkdir -p a/b/c/d
+  119  ls
+  120  touch file1
+  121  rm -v file2
+  122  rm -vf file2
+  123  rm -rf *
+  124  ls
+  125  history
+  126  clear
+  127  history
+  128  su admin
+  129  ls -lR
+  130  exit
+  131  mkdir -p test/a/b/c/d
+  132  cd test
+  133  ls
+  134  cd ..
+  135  ls
+  136  rm -rf test
+  137  ls
+  138  clear
+  139  ls
+  140  mkdir test
+  141  cd test
+  142  vim aplha
+  143  cat alpha
+  144  ls
+  145  mv aplha alpha
+  146  ls
+  147  cat alpha
+  148  less alpha
+  149  more alpha
+  150  head alpha
+  151  tail alpha
+  152  ls
+  153  mkdir X; cd X; touch X; ls
+  154  cd ..
+  155  ls
+  156  wc alpha
+  157  wc -wl alpha
+  158  cal
+  159  cal > f1
+  160  ls
+  161  cat f1
+  162  date >> f1
+  163  cat f1
+  164  ls
+  165  ls -ld X
+  166  ls -l X
+  167  ls -ld X f1
+  168  c ..
+  169  cd ..
+  170  ls
+  171  ls -l Desktop apple banana carrot f1 X
+  172  ls -l Desktop apple banana carrot f1 X &> output
+  173  ls
+  174  mv output test/output
+  175  ls
+  176  cd test
+  177  ls
+  178  ls
+  179  ls -l Desktop apple banana carrot f1 X &> output
+  180  cat output
+  181  history | head -5
+  182  head alpha
+  183  vim imp
+  184  mkdir /us1 /us2 /us3
+  185  ln imp /us1/f1
+  186  vim f1
+  187  mkdir us1 us2 us3
+  188  ln imp us1/f1
+  189  vim us1/f1
+  190  ln imp us2/f2
+  191  vim us2/f2
+  192  ln imp us3/f3
+  193  vim us3/f3
+  194  ls
+  195  ls -li imp
+  196  ls -li imp us1/f1 us2/f2 us3/f3
+  197  cd ..
+  198  las
+  199  ls
+  200  cd /
+  201  ls
+  202  rmdir us1 us2 us3
+  203  rm -rf us1 us2 us3
+  204  ls
+  205  cd root
+  206  cd test
+  207  ls -li imp us1/f1 us2/f2 us3/f3
+  208  ls -li imp us1/f1 us2/f2 us3/f3 >> output 
+  209  less output
+  210  ls -li imp us1/f1 us2/f2 us3/f3 >> hardlink_output 
+  211  vim output
+  212  ls
+  213  cat f1
+  214  cat hardlink_output
+  215  cat output
+  216  ls
+  217  ln -s imp test_imp
+  218  ls -li
+  219  rm -f imp
+  220  ls -li
+  221  touch imp
+  222  ls -li
+  223  cat imp
+  224  vim imp
+  225  vim test_imp
+  226  cat test_imp
+  227  cat imp
+  228  find /
+  229  find / -type -f -name alpha | head -5
+  230  find / -type f -name alpha | head -5
+  231  find / -size +10M -size -15M | wc -l
+  232  find / -size +10M -size -30M | wc -l
+  233  find / -size +10M -size -30M 
+  234  find / -size +10M -size -30M | wc -l
+  235  find / -size +10M -size -30M &> find_output
+  236  cat find_output
+  237  wc -l find_output
+  238  ls
+  239  grep "One"
+  240  grep "One" /alpha
+  241  grep "One" alpha
+  242  grep -i "one" alpha
+  243  history
+  244  useradd hero
+  245  passwd hero
+  246  su hero
+  247  vim /etc/passwd
+  248  vim /etc/shadow
+  249  vim /etc/gshadow
+  250  vim /etc/group
+  251  id hero
+  252  usermode -u 0 hero
+  253  us
+  254  usermode -c "Shaktimaan" hero
+  255  usermod -c "Shaktimaan" hero
+  256  vim /etc/passwd
+  257  useradd Chhayansh
+  258  passwd Chhayansh
+  259  usermod -c "Ryder" Chhayansh
+  260  vim etc/passwd
+  261  ls
+  262  vim /etc/passwd
+  263  cd /home
+  264  ls
+  265  mkdir /Chhayansh
+  266  usermod -d /Chhayansh Chhayansh
+  267  ls
+  268  cd ..
+  269  ls
+  270  vim /etc/passwd
+  271  su - Chhayansh
+  272  cd
+  273  ls
+  274  cd ..
+  275  ls
+  276  cd home
+  277  ls
+  278  user -s /sbin/nologin Chhayansh
+  279  usermod -s /sbin/nologin Chhayansh
+  280  su Chhayansh
+  281  usermod -s / bin/bash    Chhayansh
+  282  usermod -s /bin/bash Chhayansh
+  283  su Chhayansy
+  284  su Chhayansh
+  285  su - Chhayansh
+  286  cd
+  287  cd \home
+  288  ls
+  289  cd ..
+  290  ls
+  291  cd /home
+  292  ls
+  293  userdel -r hero
+  294  ls
+  295  cd
+  296  cd /
+  297  vim /etc/passwd
+  298  cd
+  299  ls /
+  300  usermod -d /home/Chhayansh
+  301  usermod -d /home/Chhayansh Chhayansh
+  302  cd /
+  303  rm -rf Chhayansh
+  304  cd
+  305  cd /home
+  306  ls
+  307  cd ls
+  308  cd ..
+  309  ls
+  310  cd
+  311  ls
+  312  cd test
+  313  ls
+  314  cd
+  315  history
+  316  ls
+  317  cd /home
+  318  userdel -r Ryder
+  319  ls
+  320  userdel -r Chhayansh
+  321  ls
+  322  cd /
+  323  ls
+  324  cd 
+  325  las
+  326  ls
+  327  clear
+  328  cd /home
+  329  userdel -r admin
+  330  cd
+  331  vim /etc/passwd
+  332  clear
+  333  ll
+  334  clear
+  335  cd /;ls
+  336  cd
+  337  clear
+  338  useradd user1
+  339  passwd user1
+  340  groupadd development
+  341  vim /etc/group
+  342  groupmod -n WhatsApp development
+  343  vim /etc/group
+  344  vim /etc/passwd
+  345  vim /etc/group
+  346  usermod -G WhatsApp
+  347  usermod -G WhatsApp user1
+  348  vim /etc/passwd
+  349  getent group user1
+  350  id user1
+  351  gpasswd WhatsApp
+  352  gpasswd -d user1 WhatsApp
+  353  gpasswd -r WhatsApp
+  354  groupdel WhatsApp
+  355  vim /etc/group
+  356  groupadd new
+  357  vim /etc/group
+  358  usermod -g new user1
+  359  id user1
+  360  vim /etc/group
+  361  getent group user1
+  362  getent group new
+  363  vim /etc/group
+  364  vim /etc/passwd
+  365  usermod -g user1 user1
+  366  getent group user1
+  367  id user1
+  368  chage user1 -l
+  369  chage user1
+  370  chage user1 -l
+  371  vim /etc/passwd
+  372  ls /etc
+  373  cd /etc/default
+  374  ls
+  375  cd
+  376  vim /etc/default/useradd
+  377  vim /etc/login.dfs
+  378  vim /etc/login.defs
+  379  visudo
+  380  vim etc/sudoers.d
+  381  vim etc/sudoers.d/
+  382  vim /etc/sudoers.d/
+  383  history
+  384  clear
+  385  history
+  386  su -user2
+  387  su - user2
+  388  su -a
+  389  su - a
+  390  ll
+  391  ls -l file1
+  392  touch file1
+  393  ls -l file1
+  394  chmod u+x file1
+  395  ls -l file1
+  396  chmod ugo+ x file1
+  397  chmod ugo + x file1
+  398  chmod x file1
+  399  chmod ugo file1
+  400  chmod ugo+x file1
+  401  ls -l file1
+  402  chmod ugo+w file1
+  403  ls -l file1
+  404  chmod ugo-w-x file1
+  405  ls -l file1
+  406  chmod ugo+rwx file1
+  407  ls -l file1
+  408  chmod ugo-rwx file1
+  409  ls -l file1
+  410  chmod a+7 file1
+  411  chmod 7 file1
+  412  chmod 777 file1
+  413  ls -l file1
+  414  chmod 000 file1
+  415  ls -l file1
+  416  chmod 777 file1
+  417  id user1
+  418  chown root:user1 file1
+  419  ls -l file1
+  420  chown user1:user1 file1
+  421  chown user1 root file1
+  422  chown user1:root file1
+  423  chown :user1 file1
+  424  ls -l file1
+  425  clear
+  426  mkdir
+  427  mkdir /wednesday
+  428  ls -ls /wednesday
+  429  ls -ld /wednesday
+  430  useradd a,b,c
+  431  useradd a: useradd b; useradd c
+  432  useradd a; useradd b; useradd c
+  433  id c
+  434  passwd a
+  435  passwd b
+  436  passwd c
+  437  groupadd test
+  438  usermod -G test a
+  439  usermod -G test b
+  440  usermod -G test c
+  441  getent group test
+  442  chgrp test /wednesday
+  443  ls -ld /wednesday
+  444  chmod g+w /wedmesday
+  445  chmod o-x /wedmesday
+  446  chmod o-x /wednesday
+  447  ls -ld /wednesday
+  448  usermod -G c c
+  449  id c
+  450  getent group test
+  451  passwd a
+  452  chmod g+w /wednesday
+  453  ls -ld /wednesday
+  454  chmod o+x /wednesday
+  455  ls -ld /wednesday
+  456  getent group test
+  457  chmod g+s /wednesday
+  458  ls -ld /wednesday
+  459  mkdir /assignment
+  460  ls -ld /assignment/
+  461  useradd user2
+  462  passwd user2
+  463  chmod 777 /assignment/
+  464  ls -ld /assignment/
+  465  chmod o+t /assignment/
+  466  ls -ld /assignment/
+  467  chmod o-t /assignment/
+  468  chmod 755 /assignment/
+  469  ls -ld /assignment/
+  470  vim /.bashrc
+  471  vim .bashrc
+  472  vim /etc/login.df
+  473  vim /etc/login.dfs
+  474  vim /etc/login.defs
+  475  vim .bashrc
+  476  su - user1
+  477  history
+  478  flatpak remotes --user
+  479  flatpak remotes-ls --user
+  480  flatpak remotes --user
+  481  su - admin
+  482  man setfacl
+  483  mkdir /mars
+  484  setfacl -m u:a /mars
+  485  setfacl -m u:a:rwx /mars
+  486  getfacl
+  487  getfacl /mars
+  488  vim /etc/group
+  489  setfacl -m g:test:rwx /mars
+  490  getfacl /mars
+  491  su - b
+  492  setfacl -x u:a /mars
+  493  getfacl /mars
+  494  setfacl -x g:test /mars
+  495  setfacl -m g:test:rwx /mars
+  496  setfacl -m u:a:rwx /mars
+  497  getfacl /mars
+  498  setfacl -b /mars
+  499  getfacl /mars
+  500  chmod 111 /mars
+  501  getfacl /mars
+  502  chmod 000 /mars
+  503  getfacl /mars
+  504  rm -rf /mars
+  505  yum install httpd
+  506  lsblk
+  507  cd /run/media/root/RHEL-10-1-BaseOS-x86_64
+  508  cd /run/media/root/RHEL-10-1-BaseOS-x86_64
+  509  ls
+  510  cd AppStream
+  511  ls
+  512  c Packages/
+  513  cd Packages/
+  514  ls
+  515  cd ../..
+  516  cd BaseOS/
+  517  cd Packages/
+  518  ls
+  519  cd /etc/yum.repos.d/; ls
+  520  vim cp.repo
+  521  yum repolist all
+  522  cd 
+  523  yum install httpd
+  524  [AppStream]
+  525  name = AppStream
+  526  baseurl = file:////run/media/root/RHEL-10-1-BaseOS-x86_64/AppStream
+  527  gpgcheck = 0
+  528  enable = 1
+  529  [BaseOS]
+  530  name = BaseOS
+  531  baseurl = file:////run/media/root/RHEL-10-1-BaseOS-x86_64/BaseOS
+  532  gpgcheck = 0
+  533  enable = 1
+  534  ~                                                                             
+  535  -- INSERT --                                          :q
+  536  epm -q hhtpd
+  537  rpm -q hhtpd
+  538  rpm -q httpd
+  539  rpm -ql httpd
+  540  rpm -qd httpd
+  541  rpm -qc httpd
+  542  yum list
+  543  yum list python
+  544  yum list python*
+  545  yum search all "web server"
+  546  yum info hhtpd
+  547  yum info httpd
+  548  yum info python
+  549  yum info httpd
+  550  yum provide /var/www/html
+  551  yum provides /var/www/html
+  552  yum remove httpd -y
+  553  yum update
+  554  yum list kernel
+  555  yum group list
+  556  vim /etc/groups
+  557  vim /etc/group
+  558  yum group info 'Security Tools'
+  559  yum group install 'Security Tools'
+  560  tail /var/log/dnf.rpm.log
+  561  yum history
+  562  yum undo dnf 7
+  563  man yum ls
+  564  yum history undo 4
+  565  yum history
+  566  yum history undo 5
+  567  sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+  568  sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+  569  cd /etc/yum.repo.d;ls
+  570  cd /etc/yum.repos.d;ls
+  571  vim epel.repo
+  572  yum install flatpack
+  573  yum install flatpak -y
+  574  cd
+  575  flatpak remotes
+  576  flatpak remotes -d
+  577  flatpak remotes -ls app
+  578  flatpak remotes -ls --app
+  579  flatpak remotes-ls --app
+  580  flatpak remote-ls --app
+  581  flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
+  582  flatpak remote-add --if-not-exists flathub
+  583  su - a
+  584  useradd admin
+  585  passwd admin
+  586  usermod -G wheel admin
+  587  getent group wheel
+  588  su - admin
+  589  yum repolist all
+  590  yum group list
+  591  yum remove -security tools -y
+  592  yum history
+  593  yum history undo 4
+  594  flatpak remotes
+  595  flatpak remote-ls --app
+  596  su - admin
+  597  flatpak remotes
+  598  lsblk
+  599  history
+  600  yum install httpd
+  601  yum history
+  602  ls -l /dev/sda1
+  603  cd /dev;ll
+  604  df-h
+  605  du -f 
+  606  du -h 
+  607  lsblk
+  608  cd 
+  609  mkdir /mount1
+  610  mount /dev/sr0 /mount1
+  611  lsblk
+  612  cd /mount1
+  613  ls
+  614  reboot
+  615  lsblk
+  616  history
+  617  lsblk
+  618  locate
+  619  update db
+  620  updatedb
+  621  locate passwd
+  622  locate image
+  623  locate messages
+  624  locate locate
+  625  find /usr
+  626  find /usr -name passwd
+  627  find / -name passwd
+  628  find / -name '*.txt'
+  629  find / -name '*pass*'
+  630  find / -iname '*pass*'
+  631  find / -iname '*mess*'
+  632  find / -user admin
+  633  find / -user user1
+  634  find / -group test
+  635  find / -uid 1000
+  636  find / -perm 222
+  637  find / -perm 444
+  638  find / -perm 321
+  639  find / -perm 000
+  640  find / -perm g=s
+  641  find / -perm u=s
+  642  find / -perm t=s
+  643  find / -perm -t=s
+  644  find / -perm -u=s
+  645  find / -perm -g=s
+  646  find / -perm -u=srw,o=wr
+  647  find / -perm -u=rw,o=wr
+  648  man /proc ls
+  649  man /proc 
+  650  man proc
+  651  find / -mmin +120
+  652  history
+  653  find / -mmin -5
+  654  find / -mmin 5
+  655  find / -mmin 120
+  656  find / -mmin +1
+  657  man find
+  658  ps
+  659  top
+  660  ps aux
+  661  ps -j
+  662  ps aux
+  663  ps aux -less
+  664  ps aux less
+  665  less ps aux
+  666  sleep
+  667  sleep 1200
+  668  sleep 12000 &
+  669  ps aux
+  670  fg %1
+  671  ps
+  672  kill 4129
+  673  ps aux
+  674  sleep 12000 &
+  675  kill 4127
+  676  kill 4147
+  677  kill -9 4147
+  678  ps aux
+  679  sleep 12000 &
+  680  kill -9 4169
+  681  who
+  682  uptime
+  683  ls cpu
+  684  ls -cpu
+  685  lscpu
+  686  fg %1
+  687  fg 
+  688  sleep 100 
+  689  sleep 100 &
+  690  fg
+  691  history
+  692  clear
+  693  history
+  694  dnf remove epel release
+  695  dnf remove epel-release
+  696  systemctl
+  697  systemctl list-unit
+  698  systemctl list-units --service
+  699  systemctl list-units --type service
+  700  systemctl list-units --type=service --all
+  701  systemctl list-unit-file --type=service --all
+  702  systemctl list-unit-files --type=service --all
+  703  systemctl list-unit-files --type service 
+  704  systemctl list-units --type service
+  705  systemctl status httpd
+  706  systemctl start httpd
+  707  systemctl status httpd
+  708  systemctl stop httpd
+  709  systemctl status httpd
+  710  history
+  711  systemctl start httpd
+  712  systemctl restart httpd
+  713  systemctl status httpd
+  714  systemctl stop httpd
+  715  systemctl start httpd
+  716  systemctl status httpd
+  717  systemctl reload httpd
+  718  systemctl status httpd
+  719  systemctl restart httpd
+  720  systemctl status httpd
+  721  systemctl enable httpd
+  722  cd /etc/systemd/system/multi-user.target.wants/; ls
+  723  systemctl disable httpd
+  724  cd /etc/systemd/system/multi-user.target.wants/; ls
+  725  cd
+  726  systemctl status httpd
+  727  systemctl mask httpd
+  728  systemctl status httpd
+  729  systemctl restart httpd
+  730  systemctl reload httpd
+  731  systemctl disable httpd
+  732  systemctl stop httpd
+  733  systemctl start httpd
+  734  systemctl unmask httpd
+  735  systemctl start httpd
+  736  systemctl status httpd
+  737  systemctl enable httpd
+  738  systemctl status httpd
+  739  systemctl disable httpd
+  740  systemctl status httpd
+  741  systemctl stop httpd
+  742  systemctl status httpd
+  743  systemctl is-active httpd
+  744  systemctl is-enabled httpd
+  745  systemctl is-disabled httpd
+  746  systemctl is-failed httpd
+  747  ip a
+  748  ip addr
+  749  ifconfig
+  750  ip link show
+  751  ip addr show ens160
+  752  ip link show ens160
+  753  ip -s link show ens160
+  754  ping 8.8.8.8
+  755  ping -c4 8.8.8.8
+  756  ip route
+  757  tracepath access.redhat.com
+  758  tracepath redhat.com
+  759  ss -tan
+  760  ss -tam
+  761  ss -tan
+  762  nmcli dev status
+  763  nmcli con show
+  764  nmcli dev status --active
+  765  nmcli con show --active
+  766  nmcli con add ifname ens240 type Ethernet
+  767  nmcli con show --active
+  768  nmcli dev status --active
+  769  nmcli con show 
+  770  nmcli con add con-name ens123 type ethernet
+  771  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4,method manual ipv4. address 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  772  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4. address 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  773  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4.address 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  774  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4. addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  775  nmcli con add con-name ens123 type ethernet ifname ens123 ipv4.method manual ipv4.addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  776  nmcli con show 
+  777  nmcli con add con-name ens170 type ethernet ifname ens170 ipv4.method manual ipv4.addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  778  nmcli con show 
+  779  nmcli con del ens123 
+  780  nmcli con del ethernet-ens240
+  781  nmcli con del ens170
+  782  nmcli con add con-name ens170 type ethernet ifname ens170 ipv4.method manual ipv4.addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  783  nmcli con show 
+  784  nmcli con up ens170 
+  785  nmcli con up ens160 
+  786  nmcli con down ens160 
+  787  nmcli con up ens160 
+  788  sudo apt update && sudo apt install sl
+  789  ~sudo apt update && sudo apt install sl
+  790  yum install sl
+  791  apt install sl
+  792  dnf install sl
+  793  sl
+  794  sudo dnf install sl
+  795  sudo dnf install s1
+  796  man nmcli 
+  797  history
+  798  nmcli con show
+  799  nmcli con up ens160
+  800  nmcli -f con show
+  801  nmcli -f con show ens160
+  802  ifconfig
+  803  nmcli con mod ens160 ipv4.addressess 10.0.0.5/24 ipv4.gateway 10.0.1.0 ipv4.dns 8.8.4.4 ipv4.method manual
+  804  nmcli con mod ens160 ipv4.addresses 10.0.0.5/24 ipv4.gateway 10.0.1.0 ipv4.dns 8.8.4.4 ipv4.method manual
+  805  nmcli con down en160
+  806  nmcli con down ens160
+  807  nmcli con up ens160
+  808  ifconfig
+  809  nmcli con down ens160
+  810  nmcli con up ens160
+  811  ifconfig
+  812  hostname
+  813  cd etc/NetworkManager
+  814  cd /etc/NetworkManager
+  815  ls
+  816  cd system-connections/
+  817  ls
+  818  less ens160.nmconnection 
+  819  cd /run/NetworkManager/system-connections/
+  820  ls
+  821  cat lo/nmconnection
+  822  cat lo.nmconnection
+  823  cd /usr/lib/Netwrokmanager/system-connections/;ls
+  824  cd /usr/lib/Netwrokmanager/system-connections ;ls
+  825  cd /usr/lib/Networkmanager/system-connections ;ls
+  826  cd /usr/lib/NetworkManager/system-connections ;ls
+  827  ls
+  828  hostnamectl hostname test.example.com
+  829  hostname
+  830  hostnamectl set-hostname machine1.example.com
+  831  hostnamectl
+  832  cd /etc/hostname
+  833  cd
+  834  cd /etc/
+  835  ls
+  836  cd hostname
+  837  cd
+  838  cat /etc/hostname
+  839  vim /etc/hosts
+  840  vim /etc/resolve.conf
+  841  vim /etc/resolv.conf
+  842  hostname
+  843  vim /etc/resolv.conf
+  844  history
+  845   nmcli con add con-name ens170 type ethernet ifname ens170 ipv4.method manual ipv4.addresses 192.168.12.13/24 ipv4.gateway 192.168.0.254
+  846    783  nmcli con show 
+  847    784  nmcli con up ens170 
+  848    785  nmcli con up ens160 
+  849    786  nmcli con down ens160 
+  850    787  nmcli con up ens160 
+  851    788  sudo apt update && sudo apt install sl
+  852    789  ~sudo apt update && sudo apt install sl
+  853  hostname
+  854  ifconfig
+  855  ssh username@ip/hostname
+  856  ssh admin@192.168.184.131
+  857  ssh-keygen
+  858  ls -a
+  859  cd .ssh; ls
+  860  cat know_hosts
+  861  ls
+  862  vim know_hosts
+  863  cat known_hosts
+  864  cat id_ed25519
+  865  d
+  866  cd
+  867  ssh-copy-id admin@192.168.184.131
+  868  ssh admin@192.168.184.131
+  869  ssh root@192.168.184.131
+  870  vim /etc/ssh/sshd_config
+  871  cd
+  872  ls
+  873  vim /etc/ssh/sshd_config
+  874  cd /etc/ssh/
+  875  ls
+  876  cd ssh.config.d
+  877  cd ssh_config.d
+  878  ls
+  879  cat 50-redhat.conf 
+  880  ls
+  881  cd ..
+  882  cd sshd_config.d
+  883  ls
+  884  cat 01-permitrootlogin.conf 
+  885  man ssh-keygen
+  886  cd
+  887  history
+root@machine1:~# 

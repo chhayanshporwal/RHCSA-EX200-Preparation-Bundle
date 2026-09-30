@@ -1,0 +1,318 @@
+    1  ls
+    2  cd .
+    3  ls
+    4  cd ..
+    5  ls
+    6  cd .
+    7  cd ~
+    8  ls
+    9  ls -al
+   10  cd Documents
+   11  ls
+   12  cd ..
+   13  ls
+   14  clear
+   15  ls
+   16  cd Documents
+   17  pwd
+   18  cd 
+   19  cd /
+   20  ls
+   21  cd etc
+   22  ls
+   23  cd alsa
+   24  ls
+   25  cd conf.d
+   26  pwd
+   27  ls
+   28  cd
+   29  cd ../..
+   30  cd /etc/alsa/conf.d
+   31  cd ../..
+   32  cd 
+   33  cd ..
+   34  cd 
+   35  clear
+   36  history
+   37  ls
+   38  cd Documents
+   39  pwd
+   40  cd ..
+   41  cd /root/Documents
+   42  cd /root/Documents
+   43  cd ..
+   44  cd .
+   45  cd .touch file.txt
+   46  mkdir -p a/b/c/d/
+   47  mdkir jan feb mar apr
+   48  mkdir jan feb mar apr
+   49  ls
+   50  rmdir jan feb mar apr a
+   51  ls
+   52  rmdir a
+   53  cd a
+   54  ls
+   55  cd ..
+   56  mkdir test
+   57  cd test
+   58  mkdir -p a/b/c/d
+   59  mkdir jan feb mar apr
+   60  ls
+   61  cd ..
+   62  cd a
+   63  cd b
+   64  cd c
+   65   cd d
+   66  cd ..
+   67  rmdir d
+   68  cd ..
+   69  rmdir c
+   70  cd ..
+   71  rmdir b
+   72  cd ..
+   73  rmdir a
+   74  ls
+   75  cd test
+   76  man
+   77  cd 
+   78  man ls
+   79  touch file1
+   80  ls
+   81  rm file1
+   82  ls
+   83  cd test
+   84  touch file1
+   85  ls
+   86  cat file1
+   87  vi file2
+   88  ls
+   89  vi file2
+   90  ls
+   91  cat file2
+   92  vi file1
+   93  cat file1
+   94  vim file 3
+   95  ls
+   96  cat file
+   97  mv file file3
+   98  ls
+   99  echo file3
+  100  echo"Hello World">file4
+  101  echo "Hello World" > file4
+  102  cat file4
+  103  ls
+  104  touch python{1..20}.txt
+  105  ls
+  106  mkdir java{1..20}
+  107  ls
+  108  rm -rf java{1..20}
+  109  rm -rf python{1..20}.txt
+  110  ls
+  111  mv file1 a
+  112  ls
+  113  cd a
+  114  ls
+  115  cd ..
+  116  rm -rf a
+  117  ls
+  118  mkdir -p a/b/c/d
+  119  ls
+  120  touch file1
+  121  rm -v file2
+  122  rm -vf file2
+  123  rm -rf *
+  124  ls
+  125  history
+  126  clear
+  127  history
+  128  su admin
+  129  ls -lR
+  130  exit
+  131  mkdir -p test/a/b/c/d
+  132  cd test
+  133  ls
+  134  cd ..
+  135  ls
+  136  rm -rf test
+  137  ls
+  138  clear
+  139  ls
+  140  mkdir test
+  141  cd test
+  142  vim aplha
+  143  cat alpha
+  144  ls
+  145  mv aplha alpha
+  146  ls
+  147  cat alpha
+  148  less alpha
+  149  more alpha
+  150  head alpha
+  151  tail alpha
+  152  ls
+  153  mkdir X; cd X; touch X; ls
+  154  cd ..
+  155  ls
+  156  wc alpha
+  157  wc -wl alpha
+  158  cal
+  159  cal > f1
+  160  ls
+  161  cat f1
+  162  date >> f1
+  163  cat f1
+  164  ls
+  165  ls -ld X
+  166  ls -l X
+  167  ls -ld X f1
+  168  c ..
+  169  cd ..
+  170  ls
+  171  ls -l Desktop apple banana carrot f1 X
+  172  ls -l Desktop apple banana carrot f1 X &> output
+  173  ls
+  174  mv output test/output
+  175  ls
+  176  cd test
+  177  ls
+  178* 
+  179  ls
+  180  ls -l Desktop apple banana carrot f1 X &> output
+  181  cat output
+  182  history | head -5
+  183  head alpha
+  184  vim imp
+  185  mkdir /us1 /us2 /us3
+  186  ln imp /us1/f1
+  187  vim f1
+  188* 
+  189  mkdir us1 us2 us3
+  190  ln imp us1/f1
+  191  vim us1/f1
+  192  ln imp us2/f2
+  193  vim us2/f2
+  194  ln imp us3/f3
+  195  vim us3/f3
+  196  ls
+  197  ls -li imp
+  198  ls -li imp us1/f1 us2/f2 us3/f3
+  199  cd ..
+  200  las
+  201  ls
+  202  cd /
+  203  ls
+  204  rmdir us1 us2 us3
+  205  rm -rf us1 us2 us3
+  206  ls
+  207  cd root
+  208  cd test
+  209  ls -li imp us1/f1 us2/f2 us3/f3
+  210  ls -li imp us1/f1 us2/f2 us3/f3 >> output 
+  211  less output
+  212* 
+  213  ls -li imp us1/f1 us2/f2 us3/f3 >> hardlink_output 
+  214  vim output
+  215  ls
+  216  cat f1
+  217  cat hardlink_output
+  218  cat output
+  219  ls
+  220  ln -s imp test_imp
+  221  ls -li
+  222  rm -f imp
+  223  ls -li
+  224  touch imp
+  225  ls -li
+  226  cat imp
+  227  vim imp
+  228  vim test_imp
+  229  cat test_imp
+  230  cat imp
+  231  find /
+  232  find / -type -f -name alpha | head -5
+  233  find / -type f -name alpha | head -5
+  234  find / -size +10M -size -15M | wc -l
+  235  find / -size +10M -size -30M | wc -l
+  236  find / -size +10M -size -30M 
+  237  find / -size +10M -size -30M | wc -l
+  238  find / -size +10M -size -30M &> find_output
+  239  cat find_output
+  240  wc -l find_output
+  241  ls
+  242  grep "One"
+  243  grep "One" /alpha
+  244  grep "One" alpha
+  245  grep -i "one" alpha
+  246  history
+  247  useradd hero
+  248  passwd hero
+  249  su hero
+  250  vim /etc/passwd
+  251  vim /etc/shadow
+  252  vim /etc/gshadow
+  253  vim /etc/group
+  254  id hero
+  255  usermode -u 0 hero
+  256* us
+  257  usermode -c "Shaktimaan" hero
+  258  usermod -c "Shaktimaan" hero
+  259  vim /etc/passwd
+  260  useradd Chhayansh
+  261  passwd Chhayansh
+  262  usermod -c "Ryder" Chhayansh
+  263  vim etc/passwd
+  264  ls
+  265  vim /etc/passwd
+  266  cd /home
+  267  ls
+  268  mkdir /Chhayansh
+  269  usermod -d /Chhayansh Chhayansh
+  270  ls
+  271  cd ..
+  272  ls
+  273  vim /etc/passwd
+  274  su - Chhayansh
+  275  cd
+  276  ls
+  277  cd ..
+  278  ls
+  279  cd home
+  280  ls
+  281  user -s /sbin/nologin Chhayansh
+  282  usermod -s /sbin/nologin Chhayansh
+  283  su Chhayansh
+  284  usermod -s / bin/bash    Chhayansh
+  285  usermod -s /bin/bash Chhayansh
+  286  su Chhayansy
+  287  su Chhayansh
+  288  su - Chhayansh
+  289  cd
+  290  cd \home
+  291  ls
+  292  cd ..
+  293  ls
+  294  cd /home
+  295  ls
+  296  userdel -r hero
+  297  ls
+  298  cd
+  299  cd /
+  300  vim /etc/passwd
+  301  cd
+  302  ls /
+  303  usermod -d /home/Chhayansh
+  304  usermod -d /home/Chhayansh Chhayansh
+  305  cd /
+  306  rm -rf Chhayansh
+  307  cd
+  308  cd /home
+  309  ls
+  310  cd ls
+  311  cd ..
+  312  ls
+  313  cd
+  314  ls
+  315  cd test
+  316  ls
+  317  cd
+  318  history

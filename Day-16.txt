@@ -1,0 +1,95 @@
+  902  getenforce
+  903  setenforce Enforcing
+  904  getenforce
+  905  setenforce Permissive
+  906  getenforce
+  907  setenforce Enforcing
+  908  getenforce
+  909  vim /etc/selinux/config 
+  910  ls -lZ
+  911  ls
+  912  cd admin@192.168.184.131/
+  913  ls
+  914  cd
+  915  rm -rf admin@192.168.184.131/
+  916  cd / ;ls -lZ
+  917  cd
+  918  tiuch file1 file2
+  919  touch file1 file2
+  920  cp file1 /mnt
+  921  mv file /mnt
+  922  mv file2 /mnt
+  923  cd /mnt
+  924  ls -lZ file1
+  925  ls -lZ file2
+  926  cd
+  927  cd /mnt
+  928  chcon -t mnt_t file2
+  929  ls -lZ file2
+  930  cd /
+  931  mkdir aa
+  932  ls -lZ
+  933  chcon -t mnt_t aa
+  934  ls -lZ
+  935  restorecon -v aa
+  936  getsebool -a
+  937  getsebool httpd_enable_homedirs
+  938  semanage boolean -l |grep httpd_enable_homedirs
+  939  setsebool httpd_enable_homedirs on
+  940  semanage boolean -l |grep httpd_enable_homedirs
+  941  setsebool-p httpd_enable_homedirs on
+  942  setsebool -p httpd_enable_homedirs on
+  943  setsebool -P httpd_enable_homedirs on
+  944  semanage boolean -l |grep httpd_enable_homedirs
+  945  setsebool httpd_enable_homedirs off
+  946  semanage boolean -l |grep httpd_enable_homedirs
+  947  setsebool -P httpd_enable_homedirs off
+  948  semanage boolean -l |grep httpd_enable_homedirs
+  949  cd
+  950  grep gopher /etc/services
+  951  semanage port -l
+  952  semanage port -l |grep ftp
+  953  semanage port -l |grep ftp
+  954  semanage port -l |grep -w 25
+  955  semanage port -a -t http_port_t -p -tcp 82
+  956  semanage port -a -t http_port_t -p tcp 82
+  957  semanage port -l |grep -w 82
+  958  semanage port -d -t http_port_t -p tcp 82
+  959  semanage port -l |grep -w 82
+  960  man grep
+  961  cd /etc/auto.master.d\
+  962  cd /etc/auto.master.d
+  963  cd /etc
+  964  ls
+  965  firewall-cmd --get-services 
+  966  firewall-cmd --add-service=http --permanent 
+  967  firewall-cmd --reload
+  968  firewall-cmd --list-services 
+  969  cd exports.d/
+  970  cat
+  971  cd
+  972  vim /etc/exports
+  973  ip a
+  974  history
+  975  firewall-cmd --remove-service=http --permanent 
+  976  firewall-cmd --reload
+  977  firewall-cmd --list-ports 
+  978  firewall-cmd --add-port=80/tcp --permanent 
+  979  firewall-cmd --reload
+  980  firewall-cmd --list-ports 
+  981  firewall-cmd --remove-port=80/tcp --permanent 
+  982  firewall-cmd --reload
+  983  firewall-cmd --list-ports 
+  984  firewall-cmd --get-zones 
+  985  firewall-cmd --get-default-zone 
+  986  firewall-cmd --set-default-zone=home
+  987  firewall-cmd --get-default-zone 
+  988  firewall-cmd --list-services 
+  989  firewall-cmd --set-default-zone=dmz
+  990  firewall-cmd --list-services 
+  991  firewall-cmd --set-default-zone=public
+  992  firewall-cmd --list-services 
+  993  df -h
+  994  vim /etc/auto.misc
+  995  man tar
+  996  history

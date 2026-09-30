@@ -1,0 +1,95 @@
+  901  whoami
+  902  whatis psswd
+  903  whatis passwd
+  904  man -k passwd
+  905  man -k man
+  906  ls
+  907  tar -tf backup.tar.gz
+  908  ls
+  909  pwd
+  910  tar -C /backups -xvf backup.tar.gz
+  911  mkrdir backups
+  912  mkdir backups
+  913  tar -C /backups -xvf backup.tar.gz
+  914  tar -C backups -xvf backup.tar.gz
+  915  ls
+  916  cd backups/
+  917  ls
+  918  cd
+  919  man tar
+  920  ip a
+  921  sftp admin@192.168.184.131/24
+  922  sftp admin@192.168.184.131
+  923  scp /etc/hosts /root
+  924  scp admin@192.168.184.131:/etc/hostname /root/Videos/
+  925  cd /root/Videos
+  926  ls
+  927  scp /etc admin@192.168.184.131:/root/
+  928  scp -r /etc admin@192.168.184.131:/root/
+  929  scp -r /etc admin@192.168.184.131:
+  930  ls
+  931  history
+  932  cd
+  933  man sc
+  934  rsync -av /var/log admin@192.168.184.131
+  935  rsync -av /var/log admin@192.168.184.131:/home/admin/mydir
+  936  rsync -av admin@192.168.184.131:/home/admin/mydir /root/Desktop
+  937  ls
+  938  ls Desktop/log
+  939  cd Desktop
+  940  l
+  941  ls
+  942  cd mydir
+  943  ls
+  944  cd kog
+  945  cd log
+  946  yum install tuned -y
+  947  cd
+  948  systemctl restart tuned
+  949  systemctl enable tuned
+  950  tuned -adm -list
+  951  tuned -adm list
+  952  tuned-adm list
+  953  tuned-adm profile hpc-compute 
+  954  tuned-adm list
+  955  tuned-adm recommend
+  956  tuned-adm profile virtual-guest
+  957  tuned-adm list
+  958  tuned-adm off
+  959  tuned-adm list
+  960  ls /usr/lib/tuned/profile
+  961  ls /usr/lib/tuned/profiles
+  962  cd aws
+  963  ls /usr/lib/tuned/profiles/aws
+  964  vim tuned.conf
+  965  yum install cockpit
+  966  systemctl restart cockpit
+  967  systemctl enable cockpit
+  968  systemctl enable cockpit.socket
+  969  firewall-cmd --add-service=cockpit --permanent
+  970  firewall-cmd --reload
+  971  ip a
+  972  top
+  973  ps -o pid,priority,nice
+  974  man ps
+  975  ps -eo pid,priority,nice.comm --sort=nice
+  976  ps -eo pid,priority,nice,comm --sort=nice
+  977  ps -eo pid,priority,nice,comm --sort=-nice
+  978  less ps -eo pid,priority,nice,comm --sort=-nice
+  979  ps -eo pid,priority,nice,comm --sort=-nice| less
+  980  sleep 12000 &
+  981  less ps -eo pid,priority,nice,comm --sort=-nice
+  982  ps -eo pid,priority,nice,comm --sort=-nice
+  983  ps -eo pid,priority,nice,comm --sort=nice
+  984  nice -n 15 sleep
+  985  nice -n 15 sleep 10000 &
+  986  ps -o pid,priority,nice
+  987  renice -n -20 7120
+  988  ps -o pid,priority,nice
+  989  sleep
+  990  renice -n 5 7120
+  991  ps -o pid,priority,nice
+  992  less anaconda-ks.cfg 
+  993  exit
+  994  history
+w

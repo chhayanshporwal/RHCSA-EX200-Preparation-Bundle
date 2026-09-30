@@ -1,0 +1,73 @@
+  476  history
+  477  init 0
+  478  init 
+  479  init  6
+  480  init 6
+  481  systemctl get-default
+  482  systemctl list-dependencies graphical.target | grep target
+  483  systemctl cat graphical.target 
+  484  systemctl set-default multi-user.target 
+  485  reboot
+  486  init 5
+  487  init 6
+  488  init 5
+  489  systemctl set-default graphical.target 
+  490  reboot
+  491  vim /etc/fstab
+  492  init 6
+  493  mount -o remount,rw /
+  494  mount -a
+  495  vim /etc/fstab
+  496  reboot
+  497  history
+  498  yum install httpd
+  499  systemctl restart httpd
+  500  systemctl enable httpd
+  501  systemctl enable --now httpd
+  502  cd Downloads/
+  503  wget https://templatemo.com/tm-zip-files-2020/templatemo_627_hyperluv_slideshow.zip
+  504  ls
+  505  unzip templatemo_627_hyperluv_slideshow.zip 
+  506  ls
+  507  mv templatemo_627_hyperluv_slideshow/* /var/www/html
+  508  cd /var/www/html
+  509  ls
+  510  systemctl restart httpd
+  511  systemctl status httpd
+  512  journalctl 
+  513  ls -lZ
+  514  /sbin/restorecon -v /var/www/html/index.html
+  515  /sbin/restorecon -v /var/www/html/*
+  516  /sbin/restorecon -vr /var/www/html/*
+  517  history
+  517  history
+  518  cd
+  519  vim firstscript.sh
+  520  ls -l firstscript.sh 
+  521  sh firstscript.sh
+  522  chmod a+x firstscript.sh 
+  523  ls
+  524  ./firstscript.sh 
+  525  vim firstscript.sh
+  526  vim /usr/bin/secondscript
+  527  chmod 777 /usr/bin/secondscript
+  528  secondscript
+  529  vim secondscript
+  530  vim /usr/bin/secondscript
+  531  secondscript
+  532  vim /usr/bin/secondscript
+  533  secondscript
+  534  vim /usr/bin/secondscript
+  535  vim /usr/bin/usid
+  536  chmod 777 /usr/bin/usid
+  537  usid
+  538  4002
+  539  id 4002
+  540  vim /usr/bin/backup
+  541  chmod 777 /usr/bin/backup 
+  542  backup
+  543  ls
+  544  backup
+  545  ls
+  546  su - Bhandara
+  547  history

@@ -1,0 +1,92 @@
+  998  lsblk
+  999  fdisk /dev/sdb
+ 1000  fdisk /dev/sdc
+ 1001  fdisk /dev/sdd
+ 1002  lsblk
+ 1003  pvcreate /dev/sdb1 /dev/sdc1 /dev/sdd1
+ 1004  pvdisplay
+ 1005  pvs
+ 1006  vgcreate myvg /dev/sdb1 /dev/sdc1 /dev/sdd1
+ 1007  vgdisplay
+ 1008  lvcreate -L 6G -n mylv1 myvg
+ 1009  lvdisplay
+ 1010  pvs
+ 1011  vgs
+ 1012  lvs
+ 1013  mkfs.xfs /dev/myvg/mylv1
+ 1014  blkid
+ 1015  vim /etc/fstab
+ 1016  systemctl daemon-reload
+ 1017  mkdir /lv1
+ 1018  mount -a
+ 1019  lsblk
+ 1020  history
+ 1021  vim /etc/fstab
+ 1022  lvs
+ 1023  lvdisplay
+ 1024  pvdisplay
+ 1025  lvcreate -L 7G -n mylv2 myvg
+ 1026  mkfs.ext4 /dev/myvg/mylv2
+ 1027  vim /etc/fstab
+ 1028  mkdir /lv2
+ 1029  systemctl daemon-reload
+ 1030  mount -a
+ 1031  lsblk
+ 1032  bgs
+ 1033  vgs
+ 1034  pvs
+ 1035  df -h
+ 1036  lvextend -L 8G /dev/myvg/mylv1
+ 1037  lsblk
+ 1038  fdisk /dev/sde
+ 1039  pvcreate /dev/sde1
+ 1040  pvs
+ 1041  vgextend myvg /dev/sde1
+ 1042  vgs
+ 1043  lvextend -L 8G /dev/myvg/mylv1
+ 1044  lsblk
+ 1045  pvs
+ 1046  df -h
+ 1047  xfs_growfs /dev/myvg/mylv1
+ 1048  df -h
+ 1049  lvextend -L 10G /dev/myvg/mylv2
+ 1050  df -h
+ 1051  resize2fs /dev/myvg/mylv2
+ 1052  df -h
+ 1053  lvs
+ 1054  vgs
+ 1055  lvreduce -r -L 5G/dev/myvg/mylv2
+ 1056  lvreduce -r -L 5G /dev/myvg/mylv2
+ 1057  vgs
+ 1058  lvs
+ 1059  lvreduce -r -L 5G /dev/myvg/mylv1
+ 1060  history
+ 1061  man df -h
+ 1062  unmount /lv2
+ 1063  umount /lv2
+ 1064  vim /etc/fstab 
+ 1065  vgs
+ 1066  lvremove /dev/myvg/mylv2
+ 1067  lvremove /dev/myvg/mylv1 -y
+ 1068  lvremove /dev/myvg/mylv1
+ 1069  umount /lv1
+ 1070  lvremove /dev/myvg/mylv1
+ 1071  vgremove myvg
+ 1072  vgs
+ 1073  lvs
+ 1074  pvs
+ 1075  pvremove /dev/sdb1
+ 1076  pvremove /dev/sdc1
+ 1077  pvremove /dev/sdd1
+ 1078  pvremove /dev/sde1
+ 1079  pvs
+ 1080  fdisk /dev/sdb
+ 1081  fdisk /dev/sdc
+ 1082  fdisk /dev/sdd
+ 1083  fdisk /dev/sde
+ 1084  lsblk
+ 1085  systemctl daemon-reload
+ 1086  lsblk
+ 1087  partprobe
+ 1088  lsblk
+ 1089  history

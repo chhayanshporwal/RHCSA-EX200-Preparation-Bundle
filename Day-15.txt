@@ -1,0 +1,102 @@
+996  yum install nfs-utils -y
+  997  cd ..
+  998  cd /etc
+  999  ls
+ 1000  cd
+ 1001  cd AppStream
+ 1002  ls
+ 1003  yum repolist all
+ 1004  systemctl restart nfs-server.service
+ 1005  cd
+ 1006  systemctl enable nfs-server.service
+ 1007  setenforce 0
+ 1008  getenforce
+ 1009  firewall-cmd --add-service=nfs --add-service=mountd --permanent
+ 1010  firewall-cmd --reload
+ 1011  firewall-cmd --list-service
+ 1012  mkdir /thursday
+ 1013  ls -ld /thursday/
+ 1014  vim /etc/exports
+ 1015  cat /etc/exports
+ 1016  exportfs -v
+ 1017  exportfs -rv
+ 1018  systemctl restart nfs-server.service
+ 1019  systemctl restart rpc
+ 1020  systemctl restart rpc.service
+ 1021  systemctl restart rpcbind.service
+ 1022  ip -a
+ 1023  ip -addr
+ 1024  ip a
+ 1025  ls
+ 1026  cd ..
+ 1027  ls -ld
+ 1028  ls -l
+ 1029  mkdir /thursday/lele
+ 1030  chmod 777 /thursday
+ 1031  ls -l
+ 1032  vim /etc/exports
+ 1033  systemctl restart nfs-server.service 
+ 1034  setenforce 0
+ 1035  firewall-cmd --list-services 
+ 1036  mkdir /user1
+ 1037* vim /etc/exportsv
+ 1038  exportfs -rv
+ 1039  systemctl restart nfs-server.service 
+ 1040  systemctl restart rpcbind.service 
+ 1041  ip a
+ 1042  cd /
+ 1043  ls
+ 1044  cd
+ 1045  history
+root@machine1:~#
+
+859  su - admin
+  860  yum install nfs-utils -y
+  861  systemctl restart nfs-server.service 
+  862  systemctl enable nfs-server.service 
+  863  mkdir /kisibhinamse
+  864  systemctl restart nfs-server.service 
+  865  systemctl daemon-reload 
+  866  mount -a
+  867  df -h
+  868  cd /kisibhinamse/
+  869  touch lele
+  870  ls
+  871  mkdir yoyo
+  872  ls
+  873  df -h
+  874  ls -l
+  875  vim /etc/fstab
+  876  systemctl restart nfs-server.service 
+  877  cd
+  878  df -h
+  879  cd /
+  880  ls
+  881  cd
+  882  yum install autofs -y
+  883  systemctl restart autofs.service 
+  884  systemctl enable autofs.service 
+  885  vim /etc/auto.master.d/
+  886  vim /etc/auto.master.d/aa.autofs
+  887  vim /etc/auto.misc 
+  888  cd /
+  889  ls
+  890  systemctl restart autofs
+  891  df -h
+  892  ls
+  893  cd
+  894  systemctl restart autofs
+  895  cd /
+  896  ls
+  897  vim /etc/auto.misc 
+  898  systemctl restart autofs
+  899  ls
+  900  df -h
+  901  cd /user1
+  902  df -h
+  903  vim /etc/auto.misc 
+  904  cd
+  905  history
+root@machine2:~# 
+
+ 

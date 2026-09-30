@@ -1,0 +1,65 @@
+65  vim text.txt
+   66  grep "cat" text.txt
+   67  grep "^cat" text.txt
+   68  grep "$cat" text.txt
+   69  grep "cat$" text.txt
+   70  grep "^cat$" text.txt
+   71  grep "cat." text.txt
+   72  grep "c.t" text.txt
+   73  grep "cat..$" text.txt
+   74  grep "cat$" text.txt
+   75  grep "dog$" text.txt
+   76  grep "dog?" text.txt
+   77  grep "?dog" text.txt
+   78  grep "cat?" text.txt
+   79  podman --v
+   80  podman --version 
+   81  podhub
+   82  podman ps
+   83  podman ps -a
+   84  podman images
+   85  podman images ls
+   86  podman ls
+   87  podman pull ubuntu
+   88  podman ls
+   89  podman ps
+   90  podman ps -a
+   91  podman images
+   92  podman pull ubi8
+   93  podman pull ubi10
+   94  podman container run -it ubuntu:latest 
+   95  podman ps
+   96  podman container run -it ubuntu:latest YoYo
+   97  podman container run -it --name=con1 ubuntu:latest
+   98  podman ps
+   99  podman ps -a
+  100  podman rm b1f3d358c2c7
+  101  podman ps -a
+  102  podman stop con1
+  103  podman ps -a
+  104  podman start con1
+  105  podman ps -a
+  106  podman pause con1
+  107  podman ps -a
+  108  podman unpause con1
+  109  podman ps -a
+  110  podman stop con1
+  111  podman rm con1
+  112  podman ps -a
+  113  podman ps
+  114  podman login registry.redhat.io 
+  115  podman search registry.redhat.io/ubi10
+  116  podman pull registry.redhat.io/ubi10/ubi
+  117  podman image inspect ubi
+  118  vim index.html
+  119  vim Containerfile
+  120  podman build -t my_image -f Containerfile
+  121  vim Containerfile
+  122  podman build -t my_image -f Containerfile
+  123  vim Containerfile
+  124  podman build -t my_image -f Containerfile
+  125  podman container run -itd --name=con2 my_image:latest 
+  126  podman ps-a
+  127  podman ps -a
+  128  podman inspect con2
+  129  history
